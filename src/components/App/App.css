@@ -1,0 +1,15 @@
+* {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    min-height: 100vh;
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #000;
+}
+.container{
+    position: relative;
+}

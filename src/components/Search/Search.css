@@ -1,0 +1,14 @@
+.select-custom{
+    max-width: 150px;
+}
+.select-custom option{
+    color: #000;
+}
+button[type=submit]{
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+@media screen and (max-device-width: 575.98px) {
+    .container-search .input-group-prepend{
+        display: none;
+    }
+}

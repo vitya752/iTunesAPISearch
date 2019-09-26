@@ -1,0 +1,18 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: .5s ease;
+    transform-origin: left;
+    transform: perspective(3500px) rotate3d(0, 1, 0, 0deg);
+}
+
+.content.active{
+    transform: perspective(3500px) rotate3d(0, 1, 0, 60deg);
+}
+
+@media screen and (max-device-width: 991.98px) {
+    .content.active{
+        transform: none;
+    }
+}

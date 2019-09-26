@@ -1,0 +1,23 @@
+.media{
+    top: 70px;
+    right: 15px;
+    height: 100%;
+    position: absolute;
+}
+
+.media audio{
+    top: 40px;
+    position: relative;
+}
+
+.media video{
+    width: 100%;
+    min-width: 320px;
+    max-width: 600px;
+}
+
+.btn-custom{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
