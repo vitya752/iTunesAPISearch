@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/iTunesAPISearch/precache-manifest.798905e6f9f751de6d6c8b0af4e6eca4.js"
+  "/iTunesAPISearch/precache-manifest.51bf117f7aa3ea38658324b25c021002.js"
 );
 
 self.addEventListener('message', (event) => {

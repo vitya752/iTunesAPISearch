@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "712e7b129f95846fd7ec6e95c87cb362",
+    "revision": "00a170bd0025210e711cdf4869cc12db",
     "url": "/iTunesAPISearch/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iTunesAPISearch/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "6761c33b0141d4eb2420",
+    "revision": "5b6e5380ccf899caa120",
     "url": "/iTunesAPISearch/static/css/main.7a10096f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iTunesAPISearch/static/js/2.330a9441.chunk.js"
   },
   {
-    "revision": "6761c33b0141d4eb2420",
-    "url": "/iTunesAPISearch/static/js/main.6f3fbdf9.chunk.js"
+    "revision": "5b6e5380ccf899caa120",
+    "url": "/iTunesAPISearch/static/js/main.c15178cc.chunk.js"
   },
   {
     "revision": "2bf864858fe43d740170",
