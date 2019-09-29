@@ -15,7 +15,8 @@ export default class App extends Component {
         term: '',
         media: 'musicVideo',
         activeMedia: false,
-        url: ''
+        url: '',
+        disableScroll: false
     };
 
     render() {
@@ -27,7 +28,7 @@ export default class App extends Component {
         ];
         const { data, media, activeMedia, url, disableScroll } = this.state;
         const openMedia = activeMedia ? <Media url={url} typeMedia={media} closeMedia={this.closeMedia} /> : null;
-        const styleMainContainer = disableScroll ? 
+        const styleMainContainer = disableScroll || activeMedia ? 
         { 'position' : 'fixed',
           'overflow' : 'hidden',
           'width' : '100%',

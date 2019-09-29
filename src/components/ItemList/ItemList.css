@@ -40,3 +40,10 @@ li img{
     width: 100px;
     height: 100px;
 }
+
+@media screen and (max-device-width: 575.98px) {
+    li:before{  
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+}
