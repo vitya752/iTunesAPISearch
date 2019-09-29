@@ -14,7 +14,6 @@ li:before{
     bottom: -100%;
     text-align: center;
     font-size: 12px;
-    font-family: serif, sans-serif;
     position: absolute;
     transition: .5s ease;
     padding-left: 2px;

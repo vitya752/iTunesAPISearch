@@ -20,7 +20,7 @@ const Media = ({ url, typeMedia, closeMedia }) => {
             { content }
             <button 
                 type="button"
-                className="btn btn-danger btn-custom"
+                className="btn btn-danger btn-media-close"
                 onClick={closeMedia}>
                     <FontAwesomeIcon icon={faWindowClose} />
                 </button>

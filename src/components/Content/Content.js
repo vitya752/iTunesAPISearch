@@ -5,15 +5,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 class Content extends Component{
 
-    state = {
-        enable: false
-    };
-
     render() {
         let maxId = 100;
         const {data, activeMedia, playMedia} = this.props;
         const contentWithMedia = activeMedia ? ' active' : '';
-        let list = (data.length === 0) ? 'Пусто' : data.map((item) => {
+        let list = (data.length === 0) ? 'Content is empty!' : data.map((item) => {
             const { name, url, img, price } = item;
             return(
                 <ItemList 

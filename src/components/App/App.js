@@ -28,18 +28,20 @@ export default class App extends Component {
         const { data, media, activeMedia, url } = this.state;
         const openMedia = activeMedia ? <Media url={url} typeMedia={media} closeMedia={this.closeMedia} /> : null;
         return(
-            <div className="main-container">
-                <div className="container">
-                    <Search 
+            <React.Fragment>
+                <Search 
                         typesMedia={typesMedia}
                         onSubmitQuery={this.onSubmitQuery} />
-                    <Content 
-                        data={data} 
-                        activeMedia={activeMedia}
-                        playMedia={(url) => this.playMedia(url)} />
-                    { openMedia }
+                <div className="main-container">
+                    <div className="container">
+                        <Content 
+                            data={data} 
+                            activeMedia={activeMedia}
+                            playMedia={(url) => this.playMedia(url)} />
+                        { openMedia }
+                    </div>
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 

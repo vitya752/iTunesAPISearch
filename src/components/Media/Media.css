@@ -16,8 +16,29 @@
     max-width: 600px;
 }
 
-.btn-custom{
+.btn-media-close{
     top: 0;
     right: 0;
     position: absolute;
+}
+
+@media screen and (max-device-width: 575.98px) {
+    .media{
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .7);
+    }
+    .media > audio,
+    .media > video{
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative;
+    }
+    .media > audio{
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
