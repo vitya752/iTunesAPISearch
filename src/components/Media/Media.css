@@ -34,8 +34,8 @@
     .media > audio,
     .media > video{
         top: 50%;
-        transform: translateY(-50%);
         position: relative;
+        transform: translateY(-50%);
     }
     .media > audio{
         left: 50%;

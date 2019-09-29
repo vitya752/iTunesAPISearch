@@ -86,12 +86,16 @@ export default class Search extends Component {
         e.preventDefault();
         this.props.onSubmitQuery(selectedType, term);
         this.onSearchWindowSetState(false);
+        this.props.onDisableScroll(false);
     }
 
     onSearchWindowSetState = (windowState) => {
         this.setState({
             openWindow: windowState
         });
+        if( windowState === true ) {
+            this.props.onDisableScroll(true);
+        }else this.props.onDisableScroll(false);
     }
 
 }

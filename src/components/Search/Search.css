@@ -1,6 +1,6 @@
 .search .btn--open{
     left: 0;
-    top: 50%;
+    top: 45%;
     z-index: 1;
     position: fixed;
     transform: translateY(-50%);
@@ -13,7 +13,6 @@
     width: 100%;
     overflow: hidden;
     position: absolute;
-    white-space: nowrap;
     transition: 1s ease;
     background-color: #000;
     border-right: 1px solid #fff;

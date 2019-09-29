@@ -25,14 +25,21 @@ export default class App extends Component {
             {label: 'Movie', value: 'movie'},
             {label: 'Audiobook', value: 'audiobook'},
         ];
-        const { data, media, activeMedia, url } = this.state;
+        const { data, media, activeMedia, url, disableScroll } = this.state;
         const openMedia = activeMedia ? <Media url={url} typeMedia={media} closeMedia={this.closeMedia} /> : null;
+        const styleMainContainer = disableScroll ? 
+        { 'position' : 'fixed',
+          'overflow' : 'hidden',
+          'width' : '100%',
+          'height' : '100%'
+        } : null;
         return(
             <React.Fragment>
                 <Search 
                         typesMedia={typesMedia}
-                        onSubmitQuery={this.onSubmitQuery} />
-                <div className="main-container">
+                        onSubmitQuery={this.onSubmitQuery}
+                        onDisableScroll={this.onDisableScroll} />
+                <div className="main-container" style={styleMainContainer}>
                     <div className="container">
                         <Content 
                             data={data} 
@@ -50,13 +57,15 @@ export default class App extends Component {
         window.scrollTo(0, 0);
         this.setState({
             activeMedia: !activeMedia,
-            url: url
-        })
+            url: url,
+            disableScroll: true
+        });
     };
 
     closeMedia = () => {
         this.setState({
-            activeMedia: false
+            activeMedia: false,
+            disableScroll: false
         })
     };
 
@@ -78,6 +87,12 @@ export default class App extends Component {
                     term: term
                 })
             });
+    }
+
+    onDisableScroll = (disableState) => {
+        this.setState({
+            disableScroll: disableState
+        })
     }
 
 }
