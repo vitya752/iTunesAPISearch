@@ -8,11 +8,11 @@ const Media = ({ url, typeMedia, closeMedia }) => {
     let content;
     switch(typeMedia) {
         case 'music':{
-            content = <audio controls src={url} />;
+            content = <audio autoPlay controls src={url} />;
             break;
         }
         default:{
-            content = <video controls src={url} />;
+            content = <video autoPlay controls src={url} />;
         }
     }
     return(
