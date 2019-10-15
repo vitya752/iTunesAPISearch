@@ -41,7 +41,7 @@ export default class App extends Component {
                         onSubmitQuery={this.onSubmitQuery}
                         onDisableScroll={this.onDisableScroll} />
                 <div className="main-container" style={styleMainContainer}>
-                    <div className="container">
+                    <div className="container" style={{position: 'relative'}}>
                         <Content 
                             data={data} 
                             activeMedia={activeMedia}
